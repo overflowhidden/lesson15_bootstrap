@@ -1,0 +1,118 @@
+@import "bootstrap/bootstrap";
+ 
+body{
+	background: #ccc;
+}
+.main-header{
+	background: #1d2126;
+	.btn{
+		border-color: transparent;
+		text-decoration: none ;
+		
+		&:hover{
+			border-color: #5b6168;
+			color: #a4aead;
+			background: none;
+		}
+	}
+	.navbar-nav li{
+		margin-left: 11px;
+		&.active a{
+			border-color: #23b7a4;
+			color: #23b7a4;
+		}
+	}
+}
+.carousel-caption{
+	height: 100%;
+	left: 0;
+	right: 0;
+	text-align: left;
+	h1{
+		text-transform: uppercase;
+		@include media-breakpoint-down(sm) {
+		    font-size: 1rem;
+		    margin-top: 14px;
+		}
+	}
+	p{
+		@include media-breakpoint-down(sm) {
+			font-size: 0.85rem;
+		}
+	}
+}
+.gallery-text,
+.gallery-text-row{
+	height: 100%;
+}
+.btn.btn-primary{
+	border: 2px solid #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-right: 12px;
+	&:hover{
+		background: #23b7a4;
+		color: #fff;
+		border: 2px solid #23b7a4;
+	}
+}
+.carousel-indicators{
+	justify-content: flex-end;
+	li{
+		border-radius: 50%;
+		background: none;
+		border: 2px solid #fff;
+		&.active{
+			background: #fff;
+		}
+	}
+}
+.about{
+	background: yellowgreen;
+	padding-left: 35px;
+	
+}
+.aim{
+	background: #f09;
+
+}
+
+.base-column{
+	background: #f90;
+}
+.intro{
+	min-height: 150px;
+	margin-bottom: 20px;
+	h1{
+		font-size: 22px;
+	}
+}
+.cards{
+	.card{
+		margin-bottom: 20px;
+		border: none;
+		background: none;
+		&:hover{
+			.card-body{
+				background: #3a454d;
+			}
+			h2, p{
+				color: #fff;
+			}
+		}
+	}
+	.card-body{
+		background: #e1e6ea;
+	}
+	h2{
+		font-size: 16px;
+		color: #292f36;
+	}
+	p{
+		font-size: 14px;
+		color: #8d8f92;
+	}
+	.card-title{
+		margin-bottom: 0px;
+	}
+}
